@@ -19,5 +19,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "EmotionApp"
-include(":app")
+rootProject.name = "My Application"
+include(":presentation")
+include(":domain")
+include(":data")
