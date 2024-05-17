@@ -6,8 +6,8 @@
  - Flask를 사용해 API 구축
  - 학습을 위한 데이터셋
     >[한국어_단발성_대화_데이터셋](https://aihub.or.kr/aihubdata/data/view.do?dataSetSn=270)<br>
-    [감성 대화 말뭉치](https://aihub.or.kr/aihubdata/data/view.do?dataSetSn=270)<br>
-    [감정 분류를 위한 대화 음성 데이터셋](https://aihub.or.kr/aihubdata/data/view.do?dataSetSn=270)
+    [감성 대화 말뭉치](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=86)<br>
+    [감정 분류를 위한 대화 음성 데이터셋](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=&topMenu=&dataSetSn=263&aihubDataSe=extrldata)
 
 
 ## Android 
