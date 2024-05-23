@@ -27,6 +27,18 @@ def post():
     params = None
     return jsonify({"data": data, "status": HTTPStatus.OK})
 
+@app.route('/test', methods=['POST'])
+def test():
+
+    data = {
+    "data": "test",
+    "text": "test"
+    }
+    # return text
+    params = None
+    return jsonify({"data": "test", "status": HTTPStatus.OK})
+
  
 if __name__ == "__main__":
-    app.run()
+    app.run(host="0.0.0.0", port=8000, debug=True)
+    # app.run()
