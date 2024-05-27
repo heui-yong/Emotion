@@ -1,6 +1,6 @@
 package com.example.domain.model
 
 data class Emotion(
-    val data: String,
+    val emotionData: EmotionData,
     val status: Int
 )
