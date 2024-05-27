@@ -29,8 +29,8 @@ def sentiment_predict(sentence):
     max = np.argmax(score)
 
     if max == 0:
-        return "부정의 감정입니다.\n"
+        return "부정의 감정입니다."
     elif max == 1:
-        return "중립의 감정입니다.\n"
+        return "중립의 감정입니다."
     else :
-        return "긍정의 감정입니다.\n"
+        return "긍정의 감정입니다."
