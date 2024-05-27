@@ -4,13 +4,13 @@ import com.example.domain.model.Emotion
 import com.google.gson.annotations.SerializedName
 
 data class EmotionRemote(
-    @SerializedName("data")
-    val data: String,
+    @SerializedName("emotionData")
+    val emotionData: EmotionDataRemote,
     @SerializedName("status")
     val status: Int
 )
 
 internal fun EmotionRemote.toDomain() = Emotion(
-    data = data,
+    emotionData = emotionData.toDomain(),
     status = status
 )

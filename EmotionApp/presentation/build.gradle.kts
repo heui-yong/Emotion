@@ -57,4 +57,8 @@ dependencies {
     kapt(libs.hilt.android.compiler)
     implementation(libs.androidx.multidex)
     implementation(libs.androidx.hilt.navigation.compose)
+
+    //rxjava
+    implementation("io.reactivex.rxjava2:rxjava:2.2.17")
+    implementation("io.reactivex.rxjava2:rxandroid:2.1.1")
 }
