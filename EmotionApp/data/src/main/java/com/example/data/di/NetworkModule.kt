@@ -25,7 +25,7 @@ object NetworkModule {
     @Provides
     @Singleton
     @EmotionRetrofit
-    fun providesPLRetrofit(): Retrofit {
+    fun providesRetrofit(): Retrofit {
         val logger = HttpLoggingInterceptor().apply {
             level =
                 HttpLoggingInterceptor.Level.BASIC
@@ -46,7 +46,7 @@ object NetworkModule {
 
     @Provides
     @Singleton
-    fun providesPLApiService(
+    fun providesApiService(
         @EmotionRetrofit
         retrofit: Retrofit
     ): ApiService {

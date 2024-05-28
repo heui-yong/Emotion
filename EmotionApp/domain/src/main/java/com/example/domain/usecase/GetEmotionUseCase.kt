@@ -5,7 +5,7 @@ import com.example.domain.repository.EmotionRepository
 import io.reactivex.Single
 import kotlinx.coroutines.flow.Flow
 
-class GetEmotionUseCase constructor(private val repository: EmotionRepository) {
+class GetEmotionUseCase(private val repository: EmotionRepository) {
     fun invoke(
         text: String
     ): Single<Emotion> = repository.getRemoteEmotion(text)

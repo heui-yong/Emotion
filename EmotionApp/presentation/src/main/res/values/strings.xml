@@ -1,1 +1,6 @@
-<resources></resources>
+<resources>
+    <string name="etx_input">감정을 입력해 주세요.</string>
+    <string name="btn_emotion_recognition">감정 분석</string>
+    <string name="tx_input_data">input_data : %s</string>
+    <string name="tx_output_data">감정 : %s</string>
+</resources>
