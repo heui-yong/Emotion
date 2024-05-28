@@ -8,4 +8,8 @@ interface EmotionRemoteDataSource {
     fun fetchEmotionData(
         text: String
     ): Single<EmotionRemote>
+
+    fun fetchEmotionDataWithCoroutine(
+        text: String
+    ): Flow<EmotionRemote>
 }

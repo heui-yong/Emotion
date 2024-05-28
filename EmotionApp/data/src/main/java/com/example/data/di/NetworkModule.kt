@@ -1,6 +1,7 @@
 package com.example.data.di
 
 import com.example.data.remote.service.ApiService
+import com.skydoves.sandwich.adapters.ApiResponseCallAdapterFactory
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -37,7 +38,8 @@ object NetworkModule {
         return Retrofit.Builder()
             .baseUrl("http://192.168.2.2:8000/")
             .addConverterFactory(GsonConverterFactory.create())
-            .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+            .addCallAdapterFactory(ApiResponseCallAdapterFactory.create())
+//            .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .client(client)
             .build()
     }

@@ -1,6 +1,5 @@
 package com.example.data.repository
 
-import android.util.Log
 import com.example.data.datasource.EmotionRemoteDataSource
 import com.example.data.model.toDomain
 import com.example.domain.model.Emotion
@@ -13,19 +12,17 @@ import javax.inject.Inject
 class EmotionRepositoryImpl @Inject constructor(
     private val remoteDataSource: EmotionRemoteDataSource
 ): EmotionRepository {
-    //    override suspend fun getRemoteEmotion(): Flow<Emotion> {
-//        return flow {
-//            remoteDataSource.fetchEmotionData().collect{
-//                Log.e("TAG","remoteDataSource.fetchEmotionData().collect : $it")
-//                emit(it.toDomain())
-//            }
-//        }
-//    }
     override fun getRemoteEmotion(
         text: String
     ): Single<Emotion> {
         return remoteDataSource.fetchEmotionData(text).flatMap {
             Single.just(it.toDomain())
+        }
+    }
+
+    override fun getRemoteEmotionWithCoroutine(text: String): Flow<Emotion> = flow {
+        remoteDataSource.fetchEmotionDataWithCoroutine(text).collect{
+            emit(it.toDomain())
         }
     }
 }
