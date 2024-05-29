@@ -22,4 +22,11 @@
  4. /api의 run_flask실행 후 api 동작 확인
 
 
+## 결과
+<div style="display: flex; justify-content: center;">
+ <img src=assets/긍정.jpeg width="200" height="400"/>
+ <img src=assets/부정.jpeg width="200" height="400"/>
+ <img src=assets/중립.jpeg width="200" height="400"/>
+</div>
+
 
