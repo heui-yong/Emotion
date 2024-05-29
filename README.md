@@ -22,6 +22,11 @@
  4. /api의 run_flask실행 후 api 동작 확인
 
 
+## API통신 확인
+ - postman을 통해서 확인<br>
+![api](assets/api.png)
+
+
 ## 결과
 <div style="display: flex; justify-content: center;">
  <img src=assets/긍정.jpeg width="200" height="400"/>
